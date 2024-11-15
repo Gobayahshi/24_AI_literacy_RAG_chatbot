@@ -5,7 +5,7 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
 import openai
 # import os
-# os.environ["OPENAI_API_KEY"] = "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"
+
 import os
 openai.api_key= os.environ.get("OPENAI_API_KEY")
 from langchain_openai import ChatOpenAI
